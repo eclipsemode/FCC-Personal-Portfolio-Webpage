@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #4d4e53;
+    font-size: 0.96em;
+    min-width: 350px;
+    margin: 0;
+    line-height: 1.5;
+    padding: 0;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+.wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
