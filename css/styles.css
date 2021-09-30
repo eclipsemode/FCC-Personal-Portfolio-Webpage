@@ -27,6 +27,9 @@ body {
     max-width: 100%;
     overflow: hidden;
 }
+a {
+    text-decoration: none;
+}
 
 /* ----- NAV -----*/
 
@@ -55,12 +58,17 @@ body {
     display: block;
     padding: 2rem;
     color: var(--main-white);
-    font-size: 2.2rem;
+    font-size: 2.09rem;
     font-family: "Poppins", sans-serif;
     line-height: 1.4;
 }
 .nav-item:hover {
     background: var(--main-blue);
+}
+@media (max-width: 750px) {
+    #navbar {
+        justify-content: center;
+    }
 }
 
 /* ----- WELCOME-SECTION -----*/
@@ -72,6 +80,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     line-height: 1.4;
 }
@@ -92,4 +101,234 @@ body {
     font-size: 3rem;
     font-style: italic;
     font-weight: 200;
+}
+
+/* ----- GRID-SECTION -----*/
+
+#projects {
+    max-width: 100%;
+    padding: 10rem 2rem;
+    background: var(--main-blue);
+    text-align: center;
+}
+.projects__grid {
+    display: grid;
+    width: 100%;
+    max-width: 1280px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.project-tile {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+    color: var(--main-white);
+    font-size: 4.2rem;
+}
+.grid-box {
+    background: var(--main-gray);
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+}
+.grid-box__image {
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+}
+.grid-box__text {
+    color: var(--main-white);
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+.grid-box:hover .code {
+    color: #ff7f50;
+}
+
+/* ----- BUTTON-SECTION -----*/
+
+.btn {
+    margin: 0 auto;
+    background: var(--main-gray);
+    padding: 1rem 3rem 1rem 2rem;
+    border: none;
+    color: var(--main-white);
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s ease-out;
+    border-radius: 2px;
+    position: relative;
+}
+.btn:hover {
+    background: var(--main-red);
+}
+.btn__show {
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 135px;
+    font-weight: 900;
+    transition: transform 0.3s ease-out;
+}
+.btn:hover .btn__show {
+    transform: translate(2px, 0);
+}
+
+/* ----- CONTACTS-SECTION -----*/
+
+.contacts {
+    background: var(--main-gray);
+    padding: 0 2rem;
+    height: 80vh;
+    height: fit-content;
+}
+.contacts__container {
+    width: 100%;
+    max-width: 980px;
+    padding: 12rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.info-text {
+    font-size: 1.8rem;
+    color: var(--main-white);
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 5px;
+}
+.contacts-link {
+    display: flex;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 2;
+}
+.contacts-link a {
+    font-family: "Poppins", sans-serif;
+}
+.contacts-link__go {
+    font-size: 2.6rem;
+    color: var(--main-white);
+    flex: 1 1 auto;
+    position: relative;
+    transition: 0.2s ease-out;
+    display: block;
+}
+.contacts-link__go:hover {
+    transform: translateY(5px);
+}
+.contacts-link__go:not(:first-of-type) {
+    margin-left: 60px;
+}
+.contacts-link a:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    background: url(/img/logo/facebook.png) no-repeat;
+    top: 18px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    background-size: 2.3rem;
+    display: block;
+}
+.contacts-link a:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    background: url(/img/logo/git.png) no-repeat;
+    top: 18px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    background-size: 2.3rem;
+    display: block;
+}
+.contacts-link a:nth-of-type(3)::before {
+    content: "";
+    position: absolute;
+    background: url(/img/logo/twitter.png) no-repeat;
+    top: 18px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    background-size: 2.3rem;
+    display: block;
+}
+.contacts-link a:nth-of-type(4)::before {
+    content: "";
+    position: absolute;
+    background: url(/img/logo/mail.png) no-repeat;
+    top: 18px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    background-size: 2.3rem;
+    display: block;
+}
+.contacts-link a:nth-of-type(5)::before {
+    content: "";
+    position: absolute;
+    background: url(/img/logo/call.png) no-repeat;
+    top: 18px;
+    left: 342px;
+    width: 25%;
+    height: 100%;
+    background-size: 2.3rem;
+    display: block;
+}
+@media (max-width: 1025px) {
+    .contacts-link a:nth-of-type(1)::before {
+        content: "";
+        display: none;
+    }
+    .contacts-link a:nth-of-type(2)::before {
+        content: "";
+        display: none;
+    }
+    .contacts-link a:nth-of-type(3)::before {
+        content: "";
+        display: none;
+    }
+    .contacts-link a:nth-of-type(4)::before {
+        content: "";
+        display: none;
+    }
+    .contacts-link a:nth-of-type(5)::before {
+        content: "";
+        display: none;
+    }
+}
+
+/* ----- FOOTER-SECTION -----*/
+
+.footer {
+    padding: 2rem;
+    font-weight: 300;
+    display: flex;
+    border-top: 4px solid var(--main-red);
+    justify-content: space-evenly;
+    background: var(--main-gray);
+    color: var(--main-white);
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer__text {
+    margin: 2rem;
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+}
+.text-link {
+    text-decoration: none;
+    color: var(--main-white);
 }

@@ -10,55 +10,90 @@
 </head>
 
 <body>
+    <div class="wrapper">
+        <nav id="navbar">
+            <ul class="navbar__list">
+                <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Work</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-    <nav id="navbar">
-        <ul class="navbar__list">
-            <li class="nav-item"><a href="" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Work</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+        <section id="welcome-section">
+            <h1 class="section-title">Hey I am Mimic</h1>
+            <p class="section-text">a web developer</p>
+        </section>
 
-    <section id="welcome-section">
-        <h1 class="section-title">Hey I am Mimic</h1>
-        <p class="section-text">a web developer</p>
+        <section id="projects">
+            <h2 class="project-tile">These are some of my projects</h2>
+            <div class="projects__grid">
+                <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="grid-box">
+                    <img class="grid-box__image" src="img/tribute.jpg" alt="">
+                    <p class="grid-box__text"><span class="code">
+                            < </span> Tribute Page
+                                <span class="code"> /> </span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="grid-box">
+                    <img class="grid-box__image" src="img/random-quote-machine.png" alt="">
+                    <p class="grid-box__text">
+                        <span class="code">
+                            < </span>
+                                Random Quote Machine<span class="code"> /> </span>
+                    </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="grid-box">
+                    <img class="grid-box__image" src="img/calc.png" alt="">
+                    <p class="grid-box__text"><span class="code">
+                            < </span>JavaScript Calculator<span class="code">/></span></p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="grid-box">
+                    <img class="grid-box__image" src="img/map.jpg" alt="">
+                    <p class="grid-box__text"><span class="code">
+                            < </span>Map Data Across the Globe<span class="code">/></span></p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="grid-box">
+                    <img class="grid-box__image" src="img/wiki.png" alt="">
+                    <p class="grid-box__text"><span class="code">
+                            < </span>Wikipedia Viewer<span class="code">/></span></p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="grid-box">
+                    <img class="grid-box__image" src="img/tic-tac-toe.png" alt="">
+                    <p class="grid-box__text"><span class="code">
+                            < </span>Tic Tac Toe Game<span class="code">/></span></p>
+                </a>
+            </div>
+            <a href="https://codepen.io/FreeCodeCamp/" target="_blank" class="btn">Show All<span class="btn__show"> >
+                </span></a>
+        </section>
+        <section class="contacts">
+            <div class="contacts__container">
+                <div class="container-info">
+                    <h2 class="info section-title">Let's work together...</h2>
+                    <p class="info-text">How do you take your coffee?</p>
+                </div>
+                <div class="contacts-link">
+                    <a href="https://facebook.com/freecodecamp" target="_blank"
+                        class="contacts-link__go facebook">Facebook</a>
+                    <a href="https://github.com/freecodecamp" target="_blank"
+                        class="contacts-link__go github">GitHub</a>
+                    <a href="https://twitter.com/freecodecamp" target="_blank"
+                        class="contacts-link__go twitter">Twitter</a>
+                    <a href="mailto:example@example.com" target="_blank" class="contacts-link__go mail">Send a mail</a>
+                    <a href="tel:555-555-5555" target="_blank" class="contacts-link__go call">Call me</a>
+                </div>
+            </div>
+    </div>
     </section>
-
-    <section id="projects">
-        <h2 class="project-tile">These are some of my projects</h2>
-        <div class="projects__grid">
-            <a href="" class="grid-box">
-                <img class="grid-box__image" src="img/tribute.jpg" alt="">
-                <p class="grid-box__text"><span class="code">
-                        << /span>Tribute Page<span class="code">/></span></p>
-            </a>
-            <a href="" class="grid-box">
-                <img class="grid-box__image" src="img/random-quote-machine.png" alt="">
-                <p class="grid-box__text"><span class="code">
-                        << /span>Random Quote Machine<span class="code">/></span></p>
-            </a>
-            <a href="" class="grid-box">
-                <img class="grid-box__image" src="img/calc.png" alt="">
-                <p class="grid-box__text"><span class="code">
-                        < </span>JavaScript Calculator<span class="code">/></span></p>
-            </a>
-            <a href="" class="grid-box">
-                <img class="grid-box__image" src="img/map.jpg" alt="">
-                <p class="grid-box__text"><span class="code">
-                        << /span>Map Data Across the Globe<span class="code">/></span></p>
-            </a>
-            <a href="" class="grid-box">
-                <img class="grid-box__image" src="img/wiki.png" alt="">
-                <p class="grid-box__text"><span class="code">
-                        << /span>Wikipedia Viewer<span class="code">/></span></p>
-            </a>
-            <a href="" class="grid-box">
-                <img class="grid-box__image" src="img/tic-tac-toe.png" alt="">
-                <p class="grid-box__text"><span class="code">
-                        << /span>Tic Tac Toe Game<span class="code">/></span></p>
-            </a>
-        </div>
-    </section>
+    <footer class="footer">
+        <p class="footer__text">
+            **This is just a fake portfolio. All the projects and contact details given are not real.
+        </p>
+        <p class="footer__text">
+            © Created for <a href="https://www.freecodecamp.org/" class="text-link">freeCodeCamp</a>
+        </p>
+    </footer>
+    </div>
 </body>
 
 </html>
